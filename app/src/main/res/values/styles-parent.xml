@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Theme.APlayer.Base" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="colorAccent">@color/default_accent_color</item>
+    <item name="md_dark_theme">true</item>
+
+    <item name="android:windowActionBarOverlay">true</item>
+    <item name="windowActionBarOverlay">true</item>
+
+    <item name="android:windowBackground">@color/light_background_color_main</item>
+    <item name="colorPrimary">@color/light_background_color_main</item>
+    <item name="android:textColorSecondary">@color/light_text_color_primary</item> // three dots color
+    <item name="titleTextColor">@color/light_text_color_primary</item>
+
+    <item name="text_color_primary">@color/light_text_color_primary</item>
+    <item name="text_color_secondary">@color/light_text_color_secondary</item>
+    <item name="background_color_main">@color/light_background_color_main</item>
+    <item name="background_color_dialog">@color/light_background_color_dialog</item>
+    <item name="background_library_color">@color/light_library_color</item>
+
+    <item name="ripple_color">@color/light_ripple_color</item>
+    <item name="divider_color">@color/light_divider_color</item>
+
+    <item name="background_grid">@drawable/bg_grid_light</item>
+    <item name="background_list">@drawable/bg_list_light</item>
+    <item name="background_rect_ripple">@drawable/bg_rect_ripple_light</item>
+    <item name="background_oval_ripple">@drawable/bg_oval_ripple_light</item>
+
+    <item name="default_album">@drawable/icon_unchecked</item>
+    <item name="default_artist">@drawable/ic_artist</item>
+
+    <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu.Overflow</item>
+
+    <item name="android:statusBarColor">@color/light_background_color_main</item>
+    <item name="android:navigationBarColor">@color/light_background_color_main</item>
+    <item name="android:windowLightStatusBar">@bool/light</item>
+    <item name="android:windowLightNavigationBar">@bool/light</item>
+
+    <item name="md_background_color">@color/light_background_color_main</item>
+    <item name="md_title_color">@color/light_text_color_primary</item>
+    <item name="md_content_color">@color/light_text_color_primary</item>
+  </style>
+
+  <style name="Widget.ActionButton.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+    <item name="android:contentDescription">@string/abc_action_menu_overflow_description</item>
+  </style>
+
+  <style name="PopupMenuLightStyle" parent="Base.ThemeOverlay.AppCompat.Light">
+    <item name="android:textColor">@color/light_text_color_primary</item>
+  </style>
+
+  <style name="PopupMenuDarkStyle" parent="Base.ThemeOverlay.AppCompat.Dark">
+    <item name="android:textColor">@color/dark_text_color_primary</item>
+  </style>
+
+
+</resources>

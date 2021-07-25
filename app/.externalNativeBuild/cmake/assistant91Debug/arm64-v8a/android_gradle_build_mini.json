@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake",
+    "E:\\TempWorkResult\\android_music_player\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build E:\\TempWorkResult\\android_music_player\\app\\.externalNativeBuild\\cmake\\assistant91Debug\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "blur-Debug-arm64-v8a": {
+      "artifactName": "blur",
+      "buildCommand": "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build E:\\TempWorkResult\\android_music_player\\app\\.externalNativeBuild\\cmake\\assistant91Debug\\arm64-v8a --target blur",
+      "abi": "arm64-v8a",
+      "output": "E:\\TempWorkResult\\android_music_player\\app\\build\\intermediates\\cmake\\assistant91\\debug\\obj\\arm64-v8a\\libblur.so"
+    }
+  }
+}

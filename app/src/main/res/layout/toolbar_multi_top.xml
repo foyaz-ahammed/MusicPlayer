@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:weightSum="2">
+
+    <ImageButton
+        android:id="@+id/multi_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10_size"
+        android:layout_marginTop="@dimen/d20_size"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/multi_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d40_size"
+        android:layout_marginTop="@dimen/d16_size"
+        android:layout_weight="1"
+        android:text="@string/multi_top_text"
+        android:textColor="@color/md_blue_primary"
+        android:textSize="@dimen/popup_text_size" />
+
+    <TextView
+        android:id="@+id/select_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d40_size"
+        android:layout_marginTop="@dimen/d16_size"
+        android:text="@string/select_all"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="@color/md_blue_primary"
+        android:textSize="@dimen/popup_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fast_back"
+        android:icon="@drawable/ic_fast_rewind"
+        android:contentDescription=""
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/playbar_prev"
+        android:icon="@drawable/ic_skip_previous_black_24dp"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/playbar_next"
+        android:icon="@drawable/ic_skip_next_black_24dp"
+        android:contentDescription=""
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/fast_forward"
+        android:icon="@drawable/ic_fast_forward"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reslist_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="?attr/background_rect_ripple">
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="@dimen/d40_size"
+        android:layout_height="@dimen/d40_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d16_size"
+        android:layout_marginRight="@dimen/d16_size"
+        android:src="@drawable/icon_unchecked"/>
+    <!--歌曲名、歌手、专辑-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/search_image"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/search_name"
+            android:layout_width="@dimen/d200_size"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d5_szie"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/light_nonenable_text_color"
+            android:textSize="@dimen/s14_size" />
+
+        <TextView
+            android:id="@+id/search_detail"
+            android:layout_width="@dimen/d200_size"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="?attr/text_color_secondary"
+            android:textSize="@dimen/s12_size" />
+    </LinearLayout>
+
+    <!--结尾处按钮-->
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="@dimen/item_list_btn_size"
+        android:layout_height="@dimen/item_list_btn_size"
+        android:clickable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/d5_szie"
+        android:textColor="@color/light_text_color_primary" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/d5_szie"
+        android:visibility="gone"
+        android:textColor="@color/light_text_color_primary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/d16_size"
+        android:background="?attr/divider_color" />
+</RelativeLayout>

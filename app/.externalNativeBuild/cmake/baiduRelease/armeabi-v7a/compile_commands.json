@@ -1,0 +1,7 @@
+[
+{
+  "directory": "E:/TempWorkResult/android_music_player/app/.externalNativeBuild/cmake/baiduRelease/armeabi-v7a",
+  "command": "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi27 --gcc-toolchain=C:/Users/Zeus/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Zeus/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dblur_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -o CMakeFiles\\blur.dir\\src\\main\\cpp\\blur.cpp.o -c E:\\TempWorkResult\\android_music_player\\app\\src\\main\\cpp\\blur.cpp",
+  "file": "E:/TempWorkResult/android_music_player/app/src/main/cpp/blur.cpp"
+}
+]

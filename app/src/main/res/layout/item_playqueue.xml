@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/d10_size"
+    android:layout_marginTop="@dimen/d10_size"
+    android:layout_height="@dimen/d50_size"
+    android:background="?attr/background_rect_ripple">
+
+    <ImageView
+        android:id="@+id/playqueue_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/background_oval_ripple"
+        android:padding="8dp"
+        android:layout_marginRight="@dimen/d15_size"
+        android:src="@drawable/ic_delete_white_24dp" />
+
+    <com.kr.musicplayer.appwidgets.MusicVisualizer
+        android:id="@+id/visualizer"
+        android:layout_width="@dimen/d20_size"
+        android:layout_height="@dimen/d20_size"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/playqueue_delete"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d15_size"
+        android:layout_marginRight="@dimen/d15_size"
+        android:layout_toLeftOf="@id/playqueue_delete"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playlist_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/light_text_color_primary"
+            android:textSize="@dimen/s16_size" />
+
+        <TextView
+            android:id="@+id/playlist_item_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/light_text_color_secondary"
+            android:textSize="@dimen/s12_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/d16_size"
+        android:layout_marginRight="@dimen/d16_size"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

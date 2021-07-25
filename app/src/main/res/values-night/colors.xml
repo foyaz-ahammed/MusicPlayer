@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alertBkColor">#FFFFFF</color>
+
+    <color name="main_item_divider_color">#F1EFEF</color>
+    <color name="appwidget_artist_color_white_1f">#a9a9a9</color>
+    <color name="light_background_color_main">#ffffff</color>
+    <color name="light_background_color_dialog">#ffffff</color>
+    <color name="light_text_color_primary">#000000</color>
+    <color name="light_ripple_color">#1f000000</color>
+    <color name="light_library_color">#ffffff</color>
+</resources>

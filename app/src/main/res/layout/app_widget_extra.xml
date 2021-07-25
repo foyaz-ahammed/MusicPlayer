@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_widget_medium_min_height">
+
+    <ImageView
+        android:id="@+id/appwidget_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/notify_image"
+        android:layout_width="@dimen/d80_size"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_disc" />
+
+    <TextView
+        android:id="@+id/appwidget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/notify_close"
+        android:layout_toEndOf="@id/notify_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/light_text_color_primary"
+        android:textSize="@dimen/s18_size" />
+
+    <ImageButton
+        android:id="@+id/notify_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/btn_tip_close"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appwidget_title"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/notify_image"
+        android:gravity="bottom"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/appwidget_prev"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d24_size"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/widget_btn_previous_normal"
+            android:tint="@color/light_text_color_primary" />
+
+        <ImageView
+            android:id="@+id/appwidget_toggle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d48_size"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/widget_btn_play_normal"
+            android:tint="@color/light_text_color_primary" />
+
+        <ImageView
+            android:id="@+id/appwidget_next"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d24_size"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/widget_btn_next_normal"
+            android:tint="@color/light_text_color_primary" />
+    </LinearLayout>
+
+</RelativeLayout>

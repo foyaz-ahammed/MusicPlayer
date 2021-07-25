@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60_size">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/favourite"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_favorites" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/playbar_play_pause"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_ringtone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/playbar_model"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_btn_loop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/timer"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_timer_white_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_share" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60_size">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:src="@drawable/ic_timer_info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/repeatAB"
+                android:layout_width="@dimen/d42_size"
+                android:layout_height="@dimen/d42_size"
+                android:background="@drawable/ripple_gray"
+                android:tint="@color/light_text_color_primary"
+                android:src="@drawable/ic_a" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

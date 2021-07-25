@@ -1,0 +1,40 @@
+{
+  "stringTable": {
+    "0": "E:/TempWorkResult/android_music_player/app/.externalNativeBuild/cmake/anzhuomarketDebug/armeabi-v7a",
+    "1": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  "
+  },
+  "buildFiles": [
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake",
+    "E:\\TempWorkResult\\android_music_player\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build E:\\TempWorkResult\\android_music_player\\app\\.externalNativeBuild\\cmake\\anzhuomarketDebug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "blur-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe --build E:\\TempWorkResult\\android_music_player\\app\\.externalNativeBuild\\cmake\\anzhuomarketDebug\\armeabi-v7a --target blur",
+      "buildType": "debug",
+      "toolchain": "1427045506",
+      "abi": "armeabi-v7a",
+      "artifactName": "blur",
+      "files": [
+        {
+          "src": "E:\\TempWorkResult\\android_music_player\\app\\src\\main\\cpp\\blur.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "E:\\TempWorkResult\\android_music_player\\app\\build\\intermediates\\cmake\\anzhuomarket\\debug\\obj\\armeabi-v7a\\libblur.so"
+    }
+  },
+  "toolchains": {
+    "1427045506": {
+      "cppCompilerExecutable": "C:\\Users\\Zeus\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

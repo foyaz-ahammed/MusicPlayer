@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="3dp"
+                android:color="@color/md_green_light" />
+            <solid android:color="@color/md_green_primary" />
+            <!-- Set the same value for both width and height to get a circular shape -->
+            <size
+                android:width="250dp"
+                android:height="250dp" />
+        </shape>
+    </item>
+    <item
+        android:top="@dimen/d30_size"
+        android:bottom="@dimen/d30_size"
+        android:left="@dimen/d30_size"
+        android:right="@dimen/d30_size"
+        android:drawable="@drawable/ic_play_arrow_black_24dp" />
+</layer-list>

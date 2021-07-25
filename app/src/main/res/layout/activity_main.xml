@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.kr.musicplayer.ui.activity.MusicPlayer">
+
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="@dimen/d10_size"
+            android:gravity="center"
+            android:text="@string/music"
+            android:textColor="@color/light_text_color_primary"
+            android:textSize="@dimen/title_text_size" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d36_size"
+            android:layout_marginTop="@dimen/d10_size">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/d15_size"
+                android:layout_marginEnd="@dimen/d36_size"
+                android:textColor="@color/light_text_color_primary"
+                android:background="@drawable/bg_round_24"
+                android:backgroundTint="@color/search_color"
+                android:paddingStart="@dimen/d15_size"
+                android:paddingEnd="@dimen/d15_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/d25_size"
+                android:src="@drawable/ic_search_white_24dp"
+                app:tint="@color/player_time_text_color" />
+
+            <ImageView
+                android:id="@+id/theme"
+                android:layout_width="@dimen/d24_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/d5_szie"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_theme" />
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navigation_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            >
+
+            <me.khrystal.library.widget.CircleRecyclerView
+                android:id="@+id/circleRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/transparent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="223dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:overScrollMode="never"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintBottom_toTopOf="@id/bottom_actionbar_new"
+                app:layout_constraintTop_toBottomOf="@id/circleRecyclerview" />
+
+            <fragment
+                android:id="@+id/bottom_actionbar_new"
+                android:name="com.kr.musicplayer.ui.fragment.BottomActionBarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d124_size"
+                android:layout_gravity="bottom"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</FrameLayout>

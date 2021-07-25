@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/notify_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/notify_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_disc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/d10_size">
+            <!--歌曲名与关闭按钮-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10_size">
+
+                <ImageButton
+                    android:id="@+id/notify_close"
+                    android:layout_width="@dimen/d24_size"
+                    android:layout_height="@dimen/d24_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/d6_size"
+                    android:tint="@color/black"
+                    android:src="@drawable/ic_delete_white_24dp" />
+
+                <TextView
+                    android:id="@+id/notify_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d24_size"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/s15_size"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <!--三个控制按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/d8_size"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/notify_prev"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d48_size"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_skip_previous_black_24dp"
+                    android:tint="@color/ate_secondary_text_light" />
+
+                <ImageView
+                    android:id="@+id/notify_play"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d54_size"
+                    android:layout_weight="1"
+                    android:src="@drawable/bg_stroke_circle_green" />
+
+                <ImageView
+                    android:id="@+id/notify_next"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d48_size"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_skip_next_black_24dp"
+                    android:tint="@color/ate_secondary_text_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
